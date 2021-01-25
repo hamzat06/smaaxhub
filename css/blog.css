@@ -34,6 +34,7 @@ nav * {
   width: 40rem;
   margin: 0 auto;
   margin-top: 5rem;
+  margin-bottom: 7rem;
 }
 
 .hero-container h1 {
@@ -68,6 +69,14 @@ nav * {
   text-align: center;
   pointer-events: none;
   color: #B3B1B7;
+}
+
+.blog {
+  background: #fff;
+  width: 100%;
+  height: 700px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
 }
 
 @media screen and (min-width: 992px) {
