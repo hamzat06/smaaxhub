@@ -3,7 +3,7 @@ html, body {
   height: 100%;
 }
 
-.wrapper {
+.blog {
   width: 100%;
   height: 100%;
   background: #FDDAC3;
@@ -31,7 +31,7 @@ nav * {
 }
 
 .hero-container {
-  width: 40rem;
+  max-width: 40rem;
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 7rem;
@@ -46,11 +46,11 @@ nav * {
 }
 
 .has-search .form-control {
-  padding-left: 4rem;
+  padding-left: 4.5rem;
 }
 
 .has-search input[type=text] {
-  width: 38rem;
+  max-width: 38rem;
   color: #B3B1B7;
   margin: 0 auto;
   height: 4.5rem;
@@ -71,12 +71,150 @@ nav * {
   color: #B3B1B7;
 }
 
-.blog {
+.blog-container {
   background: #fff;
   width: 100%;
-  height: 700px;
+  min-height: 1500px;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
+}
+
+.blog-header {
+  max-width: 35rem;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  color: #F6F9FC;
+}
+
+.blog-header h1 {
+  font-weight: 700;
+  color: #000;
+  font-size: 3.3rem;
+}
+
+.card-container {
+  margin: 0 auto;
+  max-width: 55rem;
+  border-radius: 15px;
+  min-height: 12rem;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  border-color: linear-gradient(to right, red, blue);
+  margin-top: 2rem;
+}
+
+.card-container .card-body {
+  padding-left: 0;
+  padding-right: 5rem;
+}
+
+.card-container img {
+  height: 9rem;
+  width: 9rem;
+  border-radius: 7.5px;
+}
+
+.card-container .card-title {
+  font-weight: 700;
+}
+
+.see-more-container {
+  max-width: 10rem;
+  padding-top: 1.5rem;
+}
+
+.see-more {
+  text-decoration: none;
+  margin: 0 auto;
+  font-weight: 700;
+}
+
+.contact-form-container {
+  max-height: 1000px;
+  padding: 5rem 0;
+  background: #F6F9FC;
+  text-align: center;
+}
+
+.contact-form-container h1 {
+  max-width: 50rem;
+  margin: 0 auto;
+  font-size: 3.3rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.contact-form-container h4 {
+  font-weight: 400;
+  color: #7C7B82;
+}
+
+.contact-form {
+  max-width: 37rem;
+  margin: 4rem auto;
+}
+
+.contact-form input {
+  padding: 2rem;
+  height: 4rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2.5rem;
+}
+
+.contact-form textarea {
+  padding: 2rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+.contact-form .btn-blue {
+  width: 180px;
+  height: 60px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  background: #111439;
+  color: #fff;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+}
+
+.footer {
+  min-height: 33rem;
+  background: #fff;
+}
+
+.footer .container {
+  margin-top: 4rem;
+  border-top: .5px solid #eee;
+  padding: 5rem 2rem;
+}
+
+.footer .container .col-md-4, .footer .container .col-md-2 {
+  height: 15rem;
+  margin-top: 2rem;
+}
+
+.footer h6 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  margin-bottom: .5rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #333;
 }
 
 @media screen and (min-width: 992px) {
@@ -101,5 +239,29 @@ nav * {
 @media screen and (min-width: 1280px) {
   .nav-mg {
     margin-left: 200px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .footer .container .col-md-4, .footer .container .col-md-2 {
+    margin: 0;
+    height: 10rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .blog-container {
+    margin-bottom: 3rem;
+  }
+  
+  .has-search .form-control {
+    padding-left: 3.5rem;
+  }
+  .has-search .form-control-feedback {
+    margin-left: 1.2rem;
+  }
+
+  .contact-form-container {
+    max-height: 1050px;
   }
 }
