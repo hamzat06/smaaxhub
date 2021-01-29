@@ -34,12 +34,12 @@ nav * {
   max-width: 40rem;
   margin: 0 auto;
   margin-top: 5rem;
-  margin-bottom: 7rem;
+  margin-bottom: 6rem;
 }
 
 .hero-container h1 {
   text-align: center;
-  font-size: 3.3rem;
+  font-size: 3.2rem;
   color: #6D560E;
   margin-bottom: 3rem;
   font-weight: 700;
@@ -56,6 +56,7 @@ nav * {
   height: 4.5rem;
   border-radius: 15px;
   font-size: 1.5rem;
+  box-shadow: -2px -2px 30px rgba(0, 0, 0, .1);
 }
 
 .has-search .form-control-feedback {
@@ -80,7 +81,7 @@ nav * {
 }
 
 .blog-header {
-  max-width: 35rem;
+  max-width: 32rem;
   text-align: center;
   margin: 0 auto;
   padding-top: 5rem;
@@ -91,7 +92,7 @@ nav * {
 .blog-header h1 {
   font-weight: 700;
   color: #000;
-  font-size: 3.3rem;
+  font-size: 3rem;
 }
 
 .card-container {
@@ -132,42 +133,46 @@ nav * {
 }
 
 .contact-form-container {
-  max-height: 1000px;
-  padding: 5rem 0;
+  max-height: 56rem;
+  padding: 4rem 0;
   background: #F6F9FC;
   text-align: center;
 }
 
 .contact-form-container h1 {
-  max-width: 50rem;
+  max-width: 45rem;
   margin: 0 auto;
-  font-size: 3.3rem;
+  font-size: 3rem;
   font-weight: 700;
   margin-top: 1rem;
 }
 
-.contact-form-container h4 {
+.contact-form-container h5 {
   font-weight: 400;
   color: #7C7B82;
 }
 
 .contact-form {
   max-width: 37rem;
-  margin: 4rem auto;
+  margin: 3.5rem auto;
 }
 
 .contact-form input {
   padding: 2rem;
-  height: 4rem;
-  font-size: 1.5rem;
+  height: 3.5rem;
+  font-size: 1.2rem;
   border-radius: 10px;
   margin-bottom: 2.5rem;
 }
 
 .contact-form textarea {
   padding: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   border-radius: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+  box-shadow: -2px -2px 30px rgba(0, 0, 0, .1);
 }
 
 .contact-form .btn-blue {
@@ -182,19 +187,18 @@ nav * {
 }
 
 .footer {
-  min-height: 33rem;
+  min-height: 25rem;
   background: #fff;
 }
 
 .footer .container {
   margin-top: 4rem;
   border-top: .5px solid #eee;
-  padding: 5rem 2rem;
+  padding: 4rem 2rem;
 }
 
 .footer .container .col-md-4, .footer .container .col-md-2 {
   height: 15rem;
-  margin-top: 2rem;
 }
 
 .footer h6 {
